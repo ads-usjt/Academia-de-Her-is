@@ -1,0 +1,28 @@
+#App{
+  font-family: sans-serif;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+header .title{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#App main .title{
+  margin: 1rem .5rem;
+}
+
+main legend {
+  margin: 0 1rem;
+}
+
+footer {
+  margin: 3rem;
+}
+
+footer > p[class='credits']{
+  font-weight: bold;
+}
