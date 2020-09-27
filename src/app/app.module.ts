@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { CarouselModule } from "ngx-bootstrap/carousel";
 import { CoursesListComponent } from './courses-list/courses-list.component';
 import { CarouselCoursesComponent } from './carousel-courses/carousel-courses.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -19,6 +21,11 @@ import { CarouselCoursesComponent } from './carousel-courses/carousel-courses.co
   imports: [
     BrowserModule,
     CarouselModule.forRoot(),
+    BrowserAnimationsModule,
+    MatIconModule,
+  ],
+  exports: [
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

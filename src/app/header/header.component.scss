@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  *{
+    margin: 0 .5rem 0 .5rem;
+  }
+  legend {
+    width: auto;
+    font-size: large;
+  }
+}
