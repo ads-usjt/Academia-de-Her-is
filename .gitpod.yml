@@ -2,5 +2,5 @@ ports:
 - port: 4200
   onOpen: open-preview
 tasks:
-  - init: npm i -g @angular/cli; yarn
+  - init: export NG_CLI_ANALYTICS=off off; npm i -g @angular/cli; yarn
     command: ng serve
