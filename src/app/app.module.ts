@@ -4,19 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselModule } from "ngx-bootstrap/carousel";
 import { CoursesListComponent } from './courses-list/courses-list.component';
+import { CarouselCoursesComponent } from './carousel-courses/carousel-courses.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CarouselComponent,
-    CoursesListComponent
+    CoursesListComponent,
+    CarouselCoursesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
